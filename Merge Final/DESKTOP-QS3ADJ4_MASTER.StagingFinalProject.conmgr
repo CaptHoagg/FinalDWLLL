@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-QS3ADJ4_MASTER.StagingFinalProject"
+  DTS:DTSID="{2A8B9105-2651-4BB2-B7A4-F2A477511A1D}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="InitialCatalog">@[$Project::StagingDatabaseName]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerName">@[$Project::ServerName]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=DESKTOP-QS3ADJ4\MASTER;Initial Catalog=StagingFinalProject;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Merge Final-{2A8B9105-2651-4BB2-B7A4-F2A477511A1D}DESKTOP-QS3ADJ4\MASTER.StagingFinalProject;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
