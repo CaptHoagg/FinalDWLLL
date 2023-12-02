@@ -12,8 +12,8 @@
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="14"
-  DTS:VersionGUID="{AC512C19-9E95-4DA3-ABCC-9FE141E7AE77}">
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{C30DB913-3B29-442D-A434-F2D0CAA91F6A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -2219,15 +2219,15 @@ where [refTable].[SalesOrderID] = ?</property>
                           name="SalesOrderID" />
                         <externalMetadataColumn
                           refId="Package\FactSales Sequence\Load FactSales Data from Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[OrderDateKey]"
-                          dataType="dbTimeStamp"
+                          dataType="dbDate"
                           name="OrderDateKey" />
                         <externalMetadataColumn
                           refId="Package\FactSales Sequence\Load FactSales Data from Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ShipDateKey]"
-                          dataType="dbTimeStamp"
+                          dataType="dbDate"
                           name="ShipDateKey" />
                         <externalMetadataColumn
                           refId="Package\FactSales Sequence\Load FactSales Data from Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[DueDateKey]"
-                          dataType="dbTimeStamp"
+                          dataType="dbDate"
                           name="DueDateKey" />
                         <externalMetadataColumn
                           refId="Package\FactSales Sequence\Load FactSales Data from Source\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductKey]"
@@ -4916,24 +4916,19 @@ where [refTable].[SalesOrderID] = ?</property>
                   startId="Package\FactSales Sequence\Load FactSales Data from Source\Lookup New orderID.Outputs[Lookup No Match Output]" />
                 <path
                   refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output1]"
-                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 2.Inputs[Merge Join Right Input]"
-                  name="Merge Join Output"
-                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1.Outputs[Merge Join Output]" />
-                <path
-                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output2]"
                   endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 2.Inputs[Merge Join Left Input]"
                   name="Merge Join Output"
                   startId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output]"
+                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output2]"
                   endId="Package\FactSales Sequence\Load FactSales Data from Source\LKP- Customers.Inputs[Lookup Input]"
                   name="Merge Join Output"
                   startId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 2.Outputs[Merge Join Output]" />
                 <path
-                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output]"
-                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\FactSales Sequence\Load FactSales Data from Source\SalesOrderHeaderSalesReason.Outputs[OLE DB Source Output]" />
+                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output]"
+                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 2.Inputs[Merge Join Right Input]"
+                  name="Merge Join Output"
+                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1.Outputs[Merge Join Output]" />
                 <path
                   refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output1]"
                   endId="Package\FactSales Sequence\Load FactSales Data from Source\Lookup New orderID.Inputs[Lookup Input]"
@@ -4950,25 +4945,30 @@ where [refTable].[SalesOrderID] = ?</property>
                   name="OLE DB Source Output"
                   startId="Package\FactSales Sequence\Load FactSales Data from Source\Sales Reason.Outputs[OLE DB Source Output]" />
                 <path
-                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output2]"
-                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join.Inputs[Merge Join Right Input]"
-                  name="Sort Output"
-                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 1.Outputs[Sort Output]" />
-                <path
-                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output]"
-                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort.Outputs[Sort Output]" />
-                <path
-                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output1]"
-                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2.Outputs[Sort Output]" />
+                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output]"
+                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\FactSales Sequence\Load FactSales Data from Source\SalesOrderHeaderSalesReason.Outputs[OLE DB Source Output]" />
                 <path
                   refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output3]"
                   endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1.Inputs[Merge Join Right Input]"
                   name="Sort Output"
                   startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2 1.Outputs[Sort Output]" />
+                <path
+                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output]"
+                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join.Inputs[Merge Join Right Input]"
+                  name="Sort Output"
+                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 1.Outputs[Sort Output]" />
+                <path
+                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output1]"
+                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort.Outputs[Sort Output]" />
+                <path
+                  refId="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output2]"
+                  endId="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2.Outputs[Sort Output]" />
               </paths>
             </pipeline>
           </DTS:ObjectData>
@@ -4989,14 +4989,14 @@ where [refTable].[SalesOrderID] = ?</property>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="236,42.6666666666667"
+          Size="236,42.5"
           Id="Package\FactSales Sequence\Load FactSales Data from Source"
           TopLeft="25.3333290119963,47.0666636912027" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="279.333333333334,145.333333333334"
-          Size="279.333333333334,188"
+          PanelSize="279.5,145.5"
+          Size="279.5,188"
           Id="Package\FactSales Sequence"
           TopLeft="264.374996060506,76.6999986284972" />
       </GraphLayout>
@@ -5008,79 +5008,303 @@ where [refTable].[SalesOrderID] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="140,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 2"
-          TopLeft="598.437491082586,493.999991166592" />
-        <NodeLayout
-          Size="178.666666666667,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Lookup New OrderID"
-          TopLeft="108.749998379499,205.399996327162" />
-        <NodeLayout
-          Size="108,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2"
-          TopLeft="759.999988675118,305.333330543836" />
-        <NodeLayout
-          Size="170.666666666667,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sales Order Header"
-          TopLeft="113.749998304993,61.0999989074469" />
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\LKP - ProductKey"
-          TopLeft="1518.95831069909,602.333322562774" />
-        <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort"
-          TopLeft="157.499997653067,304.433329916199" />
-        <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join"
-          TopLeft="265.937496037223,404.108326202681" />
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sales Order Detail"
-          TopLeft="407.499993927777,61.749998895824" />
-        <NodeLayout
-          Size="177.333333333334,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\LKP - ShipToAddress"
-          TopLeft="1495.83331104368,494.194437296358" />
-        <NodeLayout
-          Size="140,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1"
-          TopLeft="877.678558350142,393.619041840803" />
-        <NodeLayout
-          Size="177.333333333334,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Lookup New orderID"
-          TopLeft="405.624993955717,208.049996315539" />
-        <NodeLayout
-          Size="141.333333333334,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sales Reason"
-          TopLeft="1066.96426981528,68.7142844855786" />
-        <NodeLayout
-          Size="108,42.6666666666667"
+          Size="108,42.5"
           Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort 1"
           TopLeft="431.249993573874,320.683329625627" />
         <NodeLayout
-          Size="108,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2 1"
-          TopLeft="1071.24998403713,234.935712015927" />
+          Size="140,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 1"
+          TopLeft="877.678558350142,393.619041840803" />
         <NodeLayout
-          Size="222.666666666667,42.6666666666667"
+          Size="141.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sales Reason"
+          TopLeft="1053.96426981528,65.7142844855786" />
+        <NodeLayout
+          Size="108,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2"
+          TopLeft="759.999988675118,305.333330543836" />
+        <NodeLayout
+          Size="177.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Lookup New orderID"
+          TopLeft="405.624993955717,208.049996315539" />
+        <NodeLayout
+          Size="161.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\LKP - ProductKey"
+          TopLeft="1518.95831069909,602.333322562774" />
+        <NodeLayout
+          Size="222.5,42.5"
           Id="Package\FactSales Sequence\Load FactSales Data from Source\SalesOrderHeaderSalesReason"
           TopLeft="699.642846717366,67.7190472902854" />
         <NodeLayout
-          Size="153.333333333334,42.6666666666667"
+          Size="172,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\OLE DB Destination"
+          TopLeft="898.958319937814,608.433324957092" />
+        <NodeLayout
+          Size="140,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join 2"
+          TopLeft="598.437491082586,493.999991166592" />
+        <NodeLayout
+          Size="177.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\LKP - ShipToAddress"
+          TopLeft="1495.83331104368,494.194437296358" />
+        <NodeLayout
+          Size="178.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Lookup New OrderID"
+          TopLeft="108.749998379499,205.399996327162" />
+        <NodeLayout
+          Size="170.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sales Order Header"
+          TopLeft="113.749998304993,61.0999989074469" />
+        <NodeLayout
+          Size="108,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort 2 1"
+          TopLeft="1071.24998403713,234.935712015927" />
+        <NodeLayout
+          Size="98.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sort"
+          TopLeft="157.499997653067,304.433329916199" />
+        <NodeLayout
+          Size="153.5,42.5"
           Id="Package\FactSales Sequence\Load FactSales Data from Source\LKP- Customers"
           TopLeft="849.85117781242,492.535707087815" />
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
+          Size="173.5,42.5"
           Id="Package\FactSales Sequence\Load FactSales Data from Source\LKP  - BillToAddress"
           TopLeft="1192.70831556059,497.388881643945" />
         <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\FactSales Sequence\Load FactSales Data from Source\OLE DB Destination"
-          TopLeft="898.958319937814,608.433324957092" />
+          Size="164,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Sales Order Detail"
+          TopLeft="407.499993927777,61.749998895824" />
+        <NodeLayout
+          Size="131.5,42.5"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source\Merge Join"
+          TopLeft="265.937496037223,404.108326202681" />
         <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output2]"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output3]"
+          TopLeft="1125.24998403713,277.602378682593">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-155.57142568699,116.01666315821"
+              Start="0,0"
+              End="-155.57142568699,108.51666315821">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.8234442463956" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.8234442463956"
+                    Point2="0,68.8234442463956"
+                    Point3="-4,68.8234442463956" />
+                  <mssgle:LineSegment
+                    End="-151.57142568699,68.8234442463956" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-151.57142568699,68.8234442463956"
+                    Point2="-155.57142568699,68.8234442463956"
+                    Point3="-155.57142568699,72.8234442463956" />
+                  <mssgle:LineSegment
+                    End="-155.57142568699,108.51666315821" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output2]"
+          TopLeft="813.999988675118,347.999997210503">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="111.678569675024,45.6190446303006"
+              Start="0,0"
+              End="111.678569675024,38.1190446303006">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.0621451196698" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.0621451196698"
+                    Point2="0,27.0621451196698"
+                    Point3="4,27.0621451196698" />
+                  <mssgle:LineSegment
+                    End="107.678569675024,27.0621451196698" />
+                  <mssgle:CubicBezierSegment
+                    Point1="107.678569675024,27.0621451196698"
+                    Point2="111.678569675024,27.0621451196698"
+                    Point3="111.678569675024,31.0621451196698" />
+                  <mssgle:LineSegment
+                    End="111.678569675024,38.1190446303006" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output1]"
+          TopLeft="206.833330986401,347.099996582866">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="104.215276161933,57.008329619815"
+              Start="0,0"
+              End="104.215276161933,49.508329619815">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.793302713451" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.793302713451"
+                    Point2="0,33.793302713451"
+                    Point3="4,33.793302713451" />
+                  <mssgle:LineSegment
+                    End="100.215276161933,33.793302713451" />
+                  <mssgle:CubicBezierSegment
+                    Point1="100.215276161933,33.793302713451"
+                    Point2="104.215276161933,33.793302713451"
+                    Point3="104.215276161933,37.793302713451" />
+                  <mssgle:LineSegment
+                    End="104.215276161933,49.508329619815" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output]"
+          TopLeft="485.249993573874,363.349996292293">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-133.09027531443,40.7583299103874"
+              Start="0,0"
+              End="-133.09027531443,33.2583299103874">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.1606549418646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.1606549418646"
+                    Point2="0,24.1606549418646"
+                    Point3="-4,24.1606549418646" />
+                  <mssgle:LineSegment
+                    End="-129.09027531443,24.1606549418646" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-129.09027531443,24.1606549418646"
+                    Point2="-133.09027531443,24.1606549418646"
+                    Point3="-133.09027531443,28.1606549418646" />
+                  <mssgle:LineSegment
+                    End="-133.09027531443,33.2583299103874" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output3]"
+          TopLeft="1124.9821269262,108.214284485579">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,126.721427530348"
+              Start="0,0"
+              End="0,119.221427530348">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,119.221427530348" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output2]"
+          TopLeft="198.583331675579,103.766665574114">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,101.633330753048"
+              Start="0,0"
+              End="0,94.1333307530483">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,94.1333307530483" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output1]"
+          TopLeft="491.89582727508,104.416665562491">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,103.633330753048"
+              Start="0,0"
+              End="0,96.1333307530483">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,96.1333307530483" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output]"
+          TopLeft="812.488084362909,110.385713956952">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,194.947616586884"
+              Start="0,0"
+              End="0,187.447616586884">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,187.447616586884" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output1]"
           TopLeft="331.604162703889,446.774992869347">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -5105,6 +5329,40 @@ where [refTable].[SalesOrderID] = ?</property>
                     Point3="336.833328378697,27.6124991486223" />
                   <mssgle:LineSegment
                     End="336.833328378697,39.7249982972446" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output]"
+          TopLeft="947.678558350142,436.28570850747">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-257.241067267555,57.714282659122"
+              Start="0,0"
+              End="-257.241067267555,50.214282659122">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,30.237286323208" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,30.237286323208"
+                    Point2="0,34.237286323208"
+                    Point3="-4,34.237286323208" />
+                  <mssgle:LineSegment
+                    End="-253.241067267555,34.237286323208" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-253.241067267555,34.237286323208"
+                    Point2="-257.241067267555,34.237286323208"
+                    Point3="-257.241067267555,38.237286323208" />
+                  <mssgle:LineSegment
+                    End="-257.241067267555,50.214282659122" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5294,277 +5552,7 @@ where [refTable].[SalesOrderID] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output3]"
-          TopLeft="1125.24998403713,277.602378682593">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-155.57142568699,116.01666315821"
-              Start="0,0"
-              End="-155.57142568699,108.51666315821">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,64.8234442463956" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,64.8234442463956"
-                    Point2="0,68.8234442463956"
-                    Point3="-4,68.8234442463956" />
-                  <mssgle:LineSegment
-                    End="-151.57142568699,68.8234442463956" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-151.57142568699,68.8234442463956"
-                    Point2="-155.57142568699,68.8234442463956"
-                    Point3="-155.57142568699,72.8234442463956" />
-                  <mssgle:LineSegment
-                    End="-155.57142568699,108.51666315821" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output]"
-          TopLeft="206.833330986401,347.099996582866">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="104.215276161933,57.008329619815"
-              Start="0,0"
-              End="104.215276161933,49.508329619815">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.793302713451" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.793302713451"
-                    Point2="0,33.793302713451"
-                    Point3="4,33.793302713451" />
-                  <mssgle:LineSegment
-                    End="100.215276161933,33.793302713451" />
-                  <mssgle:CubicBezierSegment
-                    Point1="100.215276161933,33.793302713451"
-                    Point2="104.215276161933,33.793302713451"
-                    Point3="104.215276161933,37.793302713451" />
-                  <mssgle:LineSegment
-                    End="104.215276161933,49.508329619815" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output2]"
-          TopLeft="485.249993573874,363.349996292293">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-133.09027531443,40.7583299103874"
-              Start="0,0"
-              End="-133.09027531443,33.2583299103874">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.1606549418646" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.1606549418646"
-                    Point2="0,24.1606549418646"
-                    Point3="-4,24.1606549418646" />
-                  <mssgle:LineSegment
-                    End="-129.09027531443,24.1606549418646" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-129.09027531443,24.1606549418646"
-                    Point2="-133.09027531443,24.1606549418646"
-                    Point3="-133.09027531443,28.1606549418646" />
-                  <mssgle:LineSegment
-                    End="-133.09027531443,33.2583299103874" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Sort Output1]"
-          TopLeft="813.999988675118,347.999997210503">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="111.678569675024,45.6190446303006"
-              Start="0,0"
-              End="111.678569675024,38.1190446303006">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.0621451196698" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.0621451196698"
-                    Point2="0,27.0621451196698"
-                    Point3="4,27.0621451196698" />
-                  <mssgle:LineSegment
-                    End="107.678569675024,27.0621451196698" />
-                  <mssgle:CubicBezierSegment
-                    Point1="107.678569675024,27.0621451196698"
-                    Point2="111.678569675024,27.0621451196698"
-                    Point3="111.678569675024,31.0621451196698" />
-                  <mssgle:LineSegment
-                    End="111.678569675024,38.1190446303006" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output3]"
-          TopLeft="1137.63093648195,111.380951152245">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.3809524448141,123.554760863682"
-              Start="0,0"
-              End="-12.3809524448141,116.054760863682">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,57.7773804318408" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,57.7773804318408"
-                    Point2="0,61.7773804318408"
-                    Point3="-4,61.7773804318408" />
-                  <mssgle:LineSegment
-                    End="-8.38095244481406,61.7773804318408" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.38095244481406,61.7773804318408"
-                    Point2="-12.3809524448141,61.7773804318408"
-                    Point3="-12.3809524448141,65.7773804318408" />
-                  <mssgle:LineSegment
-                    End="-12.3809524448141,116.054760863682" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output2]"
-          TopLeft="198.583331675579,103.766665574114">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,101.633330753048"
-              Start="0,0"
-              End="0,94.1333307530483">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,94.1333307530483" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output1]"
-          TopLeft="491.89582727508,104.416665562491">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,103.633330753048"
-              Start="0,0"
-              End="0,96.1333307530483">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,96.1333307530483" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[OLE DB Source Output]"
-          TopLeft="812.488084362909,110.385713956952">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,194.947616586884"
-              Start="0,0"
-              End="0,187.447616586884">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,187.447616586884" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output1]"
-          TopLeft="947.678558350142,436.28570850747">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-257.241067267555,57.714282659122"
-              Start="0,0"
-              End="-257.241067267555,50.214282659122">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,30.237286323208" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,30.237286323208"
-                    Point2="0,34.237286323208"
-                    Point3="-4,34.237286323208" />
-                  <mssgle:LineSegment
-                    End="-253.241067267555,34.237286323208" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-253.241067267555,34.237286323208"
-                    Point2="-257.241067267555,34.237286323208"
-                    Point3="-257.241067267555,38.237286323208" />
-                  <mssgle:LineSegment
-                    End="-257.241067267555,50.214282659122" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output]"
+          Id="Package\FactSales Sequence\Load FactSales Data from Source.Paths[Merge Join Output2]"
           TopLeft="738.437491082586,514.601182460537">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -5582,7 +5570,9 @@ where [refTable].[SalesOrderID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="43.956843364917,5,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

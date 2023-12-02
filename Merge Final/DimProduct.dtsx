@@ -12,8 +12,8 @@
   DTS:ObjectName="Package"
   DTS:PackageType="5"
   DTS:ProtectionLevel="0"
-  DTS:VersionBuild="7"
-  DTS:VersionGUID="{B32DE9D8-D415-4E83-B945-B29E061DAACF}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{00AF0FC1-DE54-4E59-8295-1618014BA90A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -7315,64 +7315,64 @@ WHERE
                   startId="Package\Load Product\Load Data From Staging To DimProduct\OLE DB Command.Outputs[OLE DB Command Output]" />
                 <path
                   refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output4]"
-                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductModelID.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\Load Product\Load Data From Staging To DimProduct\ProductModelProductDescriptionCulture Source.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output3]"
-                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort by culture ID.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\Load Product\Load Data From Staging To DimProduct\Culture Souce.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output1]"
-                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product By ProductModelID.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\Load Product\Load Data From Staging To DimProduct\Product Source.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output]"
-                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product Model by ProductModelID.Inputs[Sort Input]"
-                  name="OLE DB Source Output"
-                  startId="Package\Load Product\Load Data From Staging To DimProduct\Product Model Source.Outputs[OLE DB Source Output]" />
-                <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output2]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductDes ID.Inputs[Sort Input]"
                   name="OLE DB Source Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Product Description Source.Outputs[OLE DB Source Output]" />
                 <path
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output3]"
+                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product Model by ProductModelID.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Load Product\Load Data From Staging To DimProduct\Product Model Source.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output1]"
+                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort by culture ID.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Load Product\Load Data From Staging To DimProduct\Culture Souce.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output]"
+                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductModelID.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Load Product\Load Data From Staging To DimProduct\ProductModelProductDescriptionCulture Source.Outputs[OLE DB Source Output]" />
+                <path
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output2]"
+                  endId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product By ProductModelID.Inputs[Sort Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Load Product\Load Data From Staging To DimProduct\Product Source.Outputs[OLE DB Source Output]" />
+                <path
                   refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output6]"
+                  endId="Package\Load Product\Load Data From Staging To DimProduct\Merge product and Product Model.Inputs[Merge Join Left Input]"
+                  name="Sort Output"
+                  startId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product By ProductModelID.Outputs[Sort Output]" />
+                <path
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Merge With ProductModel-Des-Cul.Inputs[Merge Join Right Input]"
                   name="Sort Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductModelID.Outputs[Sort Output]" />
                 <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output]"
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output1]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Merge with Product Description.Inputs[Merge Join Right Input]"
                   name="Sort Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductDes ID.Outputs[Sort Output]" />
                 <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output1]"
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output2]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Merge product and Product Model.Inputs[Merge Join Right Input]"
                   name="Sort Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product Model by ProductModelID.Outputs[Sort Output]" />
                 <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output2]"
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output3]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Merge Join.Inputs[Merge Join Right Input]"
                   name="Sort Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Sort by culture ID.Outputs[Sort Output]" />
                 <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output3]"
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output4]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Merge Join.Inputs[Merge Join Left Input]"
                   name="Sort Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Sort by CultureID.Outputs[Sort Output]" />
                 <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output4]"
+                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output5]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Merge with Product Description.Inputs[Merge Join Left Input]"
                   name="Sort Output"
                   startId="Package\Load Product\Load Data From Staging To DimProduct\Sort by Product Description.Outputs[Sort Output]" />
-                <path
-                  refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output5]"
-                  endId="Package\Load Product\Load Data From Staging To DimProduct\Merge product and Product Model.Inputs[Merge Join Left Input]"
-                  name="Sort Output"
-                  startId="Package\Load Product\Load Data From Staging To DimProduct\Sort Product By ProductModelID.Outputs[Sort Output]" />
                 <path
                   refId="Package\Load Product\Load Data From Staging To DimProduct.Paths[Union All Output 1]"
                   endId="Package\Load Product\Load Data From Staging To DimProduct\Derived Column 1.Inputs[Derived Column Input]"
@@ -8091,22 +8091,22 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="266.666666666667,42.6666666666667"
+          Size="266.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct"
           TopLeft="26.9166641893487,34.4499975243211" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="330,190.666666666667"
-          Size="330,233.333333333334"
+          PanelSize="330,190.5"
+          Size="330,233.5"
           Id="Package\Load Product"
           TopLeft="63.7499990500509,56.0499991050363" />
         <NodeLayout
-          Size="268,42.6666666666667"
+          Size="268,42.5"
           Id="Package\Load Product Category\Load Data from Staging to DimCategory"
           TopLeft="55.7395704228744,129.08332943966" />
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
+          Size="185.5,42.5"
           Id="Package\Load Product Category\Truncate DimCategory"
           TopLeft="50.2708205043649,27.520831255739" />
         <EdgeLayout
@@ -8146,16 +8146,16 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="365.333333333334,226.666666666667"
-          Size="365.333333333334,269.333333333334"
+          PanelSize="365.5,226.5"
+          Size="365.5,269.5"
           Id="Package\Load Product Category"
           TopLeft="817.395821202858,19.9458327144137" />
         <NodeLayout
-          Size="284,42.6666666666667"
+          Size="284,42.5"
           Id="Package\Load Product Subcategory\Load Data from Staging to DimSubcategory"
           TopLeft="32.2083254822845,88.5833300208053" />
         <NodeLayout
-          Size="201.333333333334,42.6666666666667"
+          Size="201.5,42.5"
           Id="Package\Load Product Subcategory\Truncate DimSubcategory"
           TopLeft="76.583324821045,19.0333312644561" />
         <EdgeLayout
@@ -8183,13 +8183,13 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="323.333333333334,186.666666666667"
-          Size="323.333333333334,229.333333333334"
+          PanelSize="323.5,186.5"
+          Size="323.5,229.5"
           Id="Package\Load Product Subcategory"
           TopLeft="437.499993480742,55.3999991166593" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="393.749999050051,171.391665777514">
+          TopLeft="393.749999050051,171.474999110848">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -8252,95 +8252,111 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="208,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by Product Description"
-          TopLeft="615.833333333333,416.166666666666" />
-        <NodeLayout
-          Size="182.666666666667,42.6666666666667"
+          Size="182.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Product Model Source"
           TopLeft="45.5,5.49999999999993" />
         <NodeLayout
-          Size="230.666666666667,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort Product By ProductModelID"
-          TopLeft="328.5,108.166666666666" />
-        <NodeLayout
-          Size="161.333333333334,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by CultureID"
-          TopLeft="406.166666666667,621.499999999999" />
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by culture ID"
-          TopLeft="627.833333333333,621.499999999999" />
-        <NodeLayout
-          Size="185.333333333334,42.6666666666667"
+          Size="185.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductDes ID"
           TopLeft="370.166666666667,416.166666666666" />
         <NodeLayout
-          Size="206.666666666667,42.6666666666667"
+          Size="164,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Derived Column 1"
+          TopLeft="627.833333333333,1237.5" />
+        <NodeLayout
+          Size="230.5,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort Product By ProductModelID"
+          TopLeft="328.5,108.166666666666" />
+        <NodeLayout
+          Size="208,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by Product Description"
+          TopLeft="615.833333333333,416.166666666666" />
+        <NodeLayout
+          Size="161.5,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by CultureID"
+          TopLeft="406.166666666667,621.499999999999" />
+        <NodeLayout
+          Size="154.5,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Derived Column"
+          TopLeft="494.5,929.499999999999" />
+        <NodeLayout
+          Size="206.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Product Description Source"
           TopLeft="331.5,313.499999999999" />
         <NodeLayout
-          Size="150.666666666667,42.6666666666667"
+          Size="166.5,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\OLE DB Command"
+          TopLeft="482.5,1032.16666666667" />
+        <NodeLayout
+          Size="150.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Product Source"
           TopLeft="368.5,5.49999999999993" />
         <NodeLayout
-          Size="241.333333333334,42.6666666666667"
+          Size="241.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Merge With ProductModel-Des-Cul"
           TopLeft="599.166666666667,313.499999999999" />
         <NodeLayout
-          Size="131.333333333334,42.6666666666667"
+          Size="131.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Merge Join"
           TopLeft="644.166666666667,724.166666666665" />
         <NodeLayout
-          Size="238.666666666667,42.6666666666667"
+          Size="238.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Merge product and Product Model"
           TopLeft="324.5,210.833333333333" />
         <NodeLayout
-          Size="301.333333333334,42.6666666666667"
+          Size="301.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\ProductModelProductDescriptionCulture Source"
           TopLeft="620.166666666667,108.166666666666" />
         <NodeLayout
-          Size="226.666666666667,42.6666666666667"
+          Size="226.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Merge with Product Description"
           TopLeft="349.5,518.833333333332" />
         <NodeLayout
-          Size="262.666666666667,42"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort Product Model by ProductModelID"
-          TopLeft="5.50000000000003,108.5" />
+          Size="192,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductModelID"
+          TopLeft="623.833333333333,210.833333333333" />
         <NodeLayout
-          Size="145.333333333334,42.6666666666667"
+          Size="164,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by culture ID"
+          TopLeft="627.833333333333,621.499999999999" />
+        <NodeLayout
+          Size="176,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\OLE DB Command 1"
+          TopLeft="770.833333333333,929.499999999999" />
+        <NodeLayout
+          Size="209.5,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Slowly Changing Dimension"
+          TopLeft="605.166666666667,826.833333333332" />
+        <NodeLayout
+          Size="164,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Insert Destination"
+          TopLeft="627.833333333333,1340.16666666667" />
+        <NodeLayout
+          Size="121.5,42.5"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Union All"
+          TopLeft="649.166666666667,1134.83333333333" />
+        <NodeLayout
+          Size="145.5,42.5"
           Id="Package\Load Product\Load Data From Staging To DimProduct\Culture Souce"
           TopLeft="637.166666666667,518.833333333332" />
         <NodeLayout
-          Size="192,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort by ProductModelID"
-          TopLeft="623.833333333333,210.833333333333" />
+          Size="262.5,42"
+          Id="Package\Load Product\Load Data From Staging To DimProduct\Sort Product Model by ProductModelID"
+          TopLeft="5.50000000000003,108.5" />
         <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output]"
-          TopLeft="462.833333333333,458.833333333333">
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Union All Output 1]"
+          TopLeft="709.833333333333,1177.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-36.4444444444444,59.9999999999998"
+              EndConnector="0,59.9999999999998"
               Start="0,0"
-              End="-36.4444444444444,52.4999999999998">
+              End="0,52.4999999999998">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.7476635514017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7476635514017"
-                    Point2="0,35.7476635514017"
-                    Point3="-4,35.7476635514017" />
-                  <mssgle:LineSegment
-                    End="-32.4444444444444,35.7476635514017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-32.4444444444444,35.7476635514017"
-                    Point2="-36.4444444444444,35.7476635514017"
-                    Point3="-36.4444444444444,39.7476635514017" />
-                  <mssgle:LineSegment
-                    End="-36.4444444444444,52.4999999999998" />
+                    End="0,52.4999999999998" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8350,7 +8366,7 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output5]"
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output6]"
           TopLeft="443.833333333333,150.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8384,143 +8400,7 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output1]"
-          TopLeft="136.833333333333,150.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="268.555555555556,60.3333333333332"
-              Start="0,0"
-              End="268.555555555556,52.8333333333332">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.958934517203" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.958934517203"
-                    Point2="0,35.958934517203"
-                    Point3="4,35.958934517203" />
-                  <mssgle:LineSegment
-                    End="264.555555555556,35.958934517203" />
-                  <mssgle:CubicBezierSegment
-                    Point1="264.555555555556,35.958934517203"
-                    Point2="268.555555555556,35.958934517203"
-                    Point3="268.555555555556,39.958934517203" />
-                  <mssgle:LineSegment
-                    End="268.555555555556,52.8333333333332" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output6]"
-          TopLeft="719.833333333333,253.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="38.8888888888889,59.9999999999999"
-              Start="0,0"
-              End="38.8888888888889,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.7628979143797" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.7628979143797"
-                    Point2="0,35.7628979143797"
-                    Point3="4,35.7628979143797" />
-                  <mssgle:LineSegment
-                    End="34.8888888888889,35.7628979143797" />
-                  <mssgle:CubicBezierSegment
-                    Point1="34.8888888888889,35.7628979143797"
-                    Point2="38.8888888888889,35.7628979143797"
-                    Point3="38.8888888888889,39.7628979143797" />
-                  <mssgle:LineSegment
-                    End="38.8888888888889,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output2]"
-          TopLeft="709.833333333333,664.166666666666">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="20.5555555555557,59.9999999999999"
-              Start="0,0"
-              End="20.5555555555557,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5667001003009" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5667001003009"
-                    Point2="0,35.5667001003009"
-                    Point3="4,35.5667001003009" />
-                  <mssgle:LineSegment
-                    End="16.5555555555557,35.5667001003009" />
-                  <mssgle:CubicBezierSegment
-                    Point1="16.5555555555557,35.5667001003009"
-                    Point2="20.5555555555557,35.5667001003009"
-                    Point3="20.5555555555557,39.5667001003009" />
-                  <mssgle:LineSegment
-                    End="20.5555555555557,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output3]"
-          TopLeft="486.833333333333,664.166666666666">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="202.444444444445,59.9999999999999"
-              Start="0,0"
-              End="202.444444444445,52.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5667001003008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5667001003008"
-                    Point2="0,35.5667001003008"
-                    Point3="4,35.5667001003008" />
-                  <mssgle:LineSegment
-                    End="198.444444444445,35.5667001003008" />
-                  <mssgle:CubicBezierSegment
-                    Point1="198.444444444445,35.5667001003008"
-                    Point2="202.444444444445,35.5667001003008"
-                    Point3="202.444444444445,39.5667001003008" />
-                  <mssgle:LineSegment
-                    End="202.444444444445,52.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output4]"
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output5]"
           TopLeft="719.833333333333,458.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8554,19 +8434,31 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output1]"
-          TopLeft="443.833333333333,48.1666666666666">
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output4]"
+          TopLeft="486.833333333333,664.166666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="202.444444444445,59.9999999999999"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="202.444444444445,52.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,31.5667001003008" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5667001003008"
+                    Point2="0,35.5667001003008"
+                    Point3="4,35.5667001003008" />
+                  <mssgle:LineSegment
+                    End="198.444444444445,35.5667001003008" />
+                  <mssgle:CubicBezierSegment
+                    Point1="198.444444444445,35.5667001003008"
+                    Point2="202.444444444445,35.5667001003008"
+                    Point3="202.444444444445,39.5667001003008" />
+                  <mssgle:LineSegment
+                    End="202.444444444445,52.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8576,19 +8468,133 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output]"
-          TopLeft="136.833333333333,48.1666666666666">
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output3]"
+          TopLeft="709.833333333333,664.166666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60.3333333333332"
+              EndConnector="20.5555555555557,59.9999999999999"
               Start="0,0"
-              End="0,52.8333333333332">
+              End="20.5555555555557,52.4999999999999">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.8333333333332" />
+                    End="0,31.5667001003009" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5667001003009"
+                    Point2="0,35.5667001003009"
+                    Point3="4,35.5667001003009" />
+                  <mssgle:LineSegment
+                    End="16.5555555555557,35.5667001003009" />
+                  <mssgle:CubicBezierSegment
+                    Point1="16.5555555555557,35.5667001003009"
+                    Point2="20.5555555555557,35.5667001003009"
+                    Point3="20.5555555555557,39.5667001003009" />
+                  <mssgle:LineSegment
+                    End="20.5555555555557,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output2]"
+          TopLeft="136.833333333333,150.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="268.555555555556,60.3333333333332"
+              Start="0,0"
+              End="268.555555555556,52.8333333333332">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.958934517203" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.958934517203"
+                    Point2="0,35.958934517203"
+                    Point3="4,35.958934517203" />
+                  <mssgle:LineSegment
+                    End="264.555555555556,35.958934517203" />
+                  <mssgle:CubicBezierSegment
+                    Point1="264.555555555556,35.958934517203"
+                    Point2="268.555555555556,35.958934517203"
+                    Point3="268.555555555556,39.958934517203" />
+                  <mssgle:LineSegment
+                    End="268.555555555556,52.8333333333332" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output1]"
+          TopLeft="462.833333333333,458.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-36.4444444444444,59.9999999999998"
+              Start="0,0"
+              End="-36.4444444444444,52.4999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7476635514017" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7476635514017"
+                    Point2="0,35.7476635514017"
+                    Point3="-4,35.7476635514017" />
+                  <mssgle:LineSegment
+                    End="-32.4444444444444,35.7476635514017" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.4444444444444,35.7476635514017"
+                    Point2="-36.4444444444444,35.7476635514017"
+                    Point3="-36.4444444444444,39.7476635514017" />
+                  <mssgle:LineSegment
+                    End="-36.4444444444444,52.4999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Sort Output]"
+          TopLeft="719.833333333333,253.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.8888888888889,59.9999999999999"
+              Start="0,0"
+              End="38.8888888888889,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.7628979143797" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.7628979143797"
+                    Point2="0,35.7628979143797"
+                    Point3="4,35.7628979143797" />
+                  <mssgle:LineSegment
+                    End="34.8888888888889,35.7628979143797" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.8888888888889,35.7628979143797"
+                    Point2="38.8888888888889,35.7628979143797"
+                    Point3="38.8888888888889,39.7628979143797" />
+                  <mssgle:LineSegment
+                    End="38.8888888888889,52.4999999999999" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -8599,40 +8605,6 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output4]"
-          TopLeft="770.833333333333,150.833333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-51,59.9999999999998"
-              Start="0,0"
-              End="-51,52.4999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.9999999999999"
-                    Point2="0,29.9999999999999"
-                    Point3="-4,29.9999999999999" />
-                  <mssgle:LineSegment
-                    End="-47,29.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-47,29.9999999999999"
-                    Point2="-51,29.9999999999999"
-                    Point3="-51,33.9999999999999" />
-                  <mssgle:LineSegment
-                    End="-51,52.4999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output2]"
           TopLeft="434.833333333333,356.166666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8667,6 +8639,50 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output3]"
+          TopLeft="136.833333333333,48.1666666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.3333333333332"
+              Start="0,0"
+              End="0,52.8333333333332">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.8333333333332" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output2]"
+          TopLeft="443.833333333333,48.1666666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output1]"
           TopLeft="709.833333333333,561.499999999999">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -8685,6 +8701,110 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Source Output]"
+          TopLeft="770.833333333333,150.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-51,59.9999999999998"
+              Start="0,0"
+              End="-51,52.4999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,25.9999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,25.9999999999999"
+                    Point2="0,29.9999999999999"
+                    Point3="-4,29.9999999999999" />
+                  <mssgle:LineSegment
+                    End="-47,29.9999999999999" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-47,29.9999999999999"
+                    Point2="-51,29.9999999999999"
+                    Point3="-51,33.9999999999999" />
+                  <mssgle:LineSegment
+                    End="-51,52.4999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Command Output]"
+          TopLeft="565.833333333333,1074.83333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.111111111111,60.0000000000002"
+              Start="0,0"
+              End="125.111111111111,52.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5314533622561" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5314533622561"
+                    Point2="0,35.5314533622561"
+                    Point3="4,35.5314533622561" />
+                  <mssgle:LineSegment
+                    End="121.111111111111,35.5314533622561" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.111111111111,35.5314533622561"
+                    Point2="125.111111111111,35.5314533622561"
+                    Point3="125.111111111111,39.5314533622561" />
+                  <mssgle:LineSegment
+                    End="125.111111111111,52.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[New Output]"
+          TopLeft="709.833333333333,869.499999999999">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="18.8888888888889,265.333333333334"
+              Start="0,0"
+              End="18.8888888888889,257.833333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,153.127982646421" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,153.127982646421"
+                    Point2="0,157.127982646421"
+                    Point3="4,157.127982646421" />
+                  <mssgle:LineSegment
+                    End="14.8888888888889,157.127982646421" />
+                  <mssgle:CubicBezierSegment
+                    Point1="14.8888888888889,157.127982646421"
+                    Point2="18.8888888888889,157.127982646421"
+                    Point3="18.8888888888889,161.127982646421" />
+                  <mssgle:LineSegment
+                    End="18.8888888888889,257.833333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-17.6469422743055,162.127982646421,54.1827734375,11.43359375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -8777,10 +8897,6 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="209.333333333334,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Slowly Changing Dimension"
-          TopLeft="605.166666666667,826.833333333332" />
         <EdgeLayout
           Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Merge Join Output]"
           TopLeft="709.833333333333,766.833333333332">
@@ -8803,10 +8919,6 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Derived Column"
-          TopLeft="494.5,929.499999999999" />
         <EdgeLayout
           Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Historical Attribute Inserts Output]"
           TopLeft="659.5,869.499999999999">
@@ -8843,136 +8955,6 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\OLE DB Command"
-          TopLeft="482.5,1032.16666666667" />
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Derived Column Output]"
-          TopLeft="568.833333333333,972.166666666665">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="121.333333333334,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Union All"
-          TopLeft="649.166666666667,1134.83333333333" />
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[New Output]"
-          TopLeft="709.833333333333,869.499999999999">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="18.8888888888889,265.333333333334"
-              Start="0,0"
-              End="18.8888888888889,257.833333333334">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,153.127982646421" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,153.127982646421"
-                    Point2="0,157.127982646421"
-                    Point3="4,157.127982646421" />
-                  <mssgle:LineSegment
-                    End="14.8888888888889,157.127982646421" />
-                  <mssgle:CubicBezierSegment
-                    Point1="14.8888888888889,157.127982646421"
-                    Point2="18.8888888888889,157.127982646421"
-                    Point3="18.8888888888889,161.127982646421" />
-                  <mssgle:LineSegment
-                    End="18.8888888888889,257.833333333334" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-17.6469422743055,162.127982646421,54.1827734375,11.43359375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[OLE DB Command Output]"
-          TopLeft="565.833333333333,1074.83333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="125.111111111111,60.0000000000002"
-              Start="0,0"
-              End="125.111111111111,52.5000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,31.5314533622561" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,31.5314533622561"
-                    Point2="0,35.5314533622561"
-                    Point3="4,35.5314533622561" />
-                  <mssgle:LineSegment
-                    End="121.111111111111,35.5314533622561" />
-                  <mssgle:CubicBezierSegment
-                    Point1="121.111111111111,35.5314533622561"
-                    Point2="125.111111111111,35.5314533622561"
-                    Point3="125.111111111111,39.5314533622561" />
-                  <mssgle:LineSegment
-                    End="125.111111111111,52.5000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Derived Column 1"
-          TopLeft="627.833333333333,1237.5" />
-        <EdgeLayout
-          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Union All Output 1]"
-          TopLeft="709.833333333333,1177.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999998"
-              Start="0,0"
-              End="0,52.4999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.4999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\Insert Destination"
-          TopLeft="627.833333333333,1340.16666666667" />
         <EdgeLayout
           Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Derived Column Output1]"
           TopLeft="709.833333333333,1280.16666666667">
@@ -8995,10 +8977,28 @@ WHERE [LoadedDate] = (SELECT MaxLoadedDate FROM LatestLoadedDate);</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="176,42.6666666666667"
-          Id="Package\Load Product\Load Data From Staging To DimProduct\OLE DB Command 1"
-          TopLeft="770.833333333333,929.499999999999" />
+        <EdgeLayout
+          Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Derived Column Output]"
+          TopLeft="568.833333333333,972.166666666665">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load Product\Load Data From Staging To DimProduct.Paths[Changing Attribute Updates Output]"
           TopLeft="760.166666666667,869.499999999999">
